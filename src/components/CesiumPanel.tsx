@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from 'react'
 import { usePOIStore } from '../stores/poi'
 import { useTelemetryStore } from '../stores/telemetry'
 
-Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzOGYyZmNlNi0wMDA4LTQ4ZWUtOGFjZi1iYTVmMDc4M2U1M2MiLCJpZCI6MzIyNzkwLCJpYXQiOjE3NTI4NDg1NTJ9.0iWFHsXiEX7UctnjPRQrTRe7sq9T0I1WkyF9WqObkl4'
+Ion.defaultAccessToken = import.meta.env.VITE_CESIUM_ACCESS_TOKEN
 
 const MINskCoordinates = { lat: 53.9125, lon: 27.544722, height: 150 }
 
